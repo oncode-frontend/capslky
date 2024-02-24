@@ -11,3 +11,11 @@ passwordInput.addEventListener('keyup', event => {
         warningElem.style.display = "none"
     }
 })
+
+window.addEventListener('keyup', event => {
+    if (event.getModifierState("CapsLock") === true) {
+        warningElem.style.display = "block"
+    } else {
+        warningElem.style.display = "none"
+    }
+})
